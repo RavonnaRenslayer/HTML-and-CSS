@@ -1,4 +1,4 @@
-<DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
-	<script> Alert("Hello, World! I am an alert box")</script>
+	<script> alert("Hello, World! I am an alert box"); </script>
 </html>
