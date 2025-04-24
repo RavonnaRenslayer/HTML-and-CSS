@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lan="en">
 	<head>
-		<title>Academy for Superheros</title>
 		<meta charset="utf-8">
+		<title>Academy for Superheros</title>
+		<link rel="stylesheet" href="./CSS/shared.css">
+		<link rel="stylesheet" href="./CSS/css-animations.css">
 	</head>
 	<body>
 	
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery" id="link"><li>GALLERY</li></a>
 					<a href="#contact" id="link"><li>CONTACT US</li></a>
@@ -20,23 +22,25 @@
 		
 		<!-- HOME -->
 		<div id="home">
-			<div>
-				<span>The Main Superheros</span>
+			<div class="container">
+				<div class="text-center">
+					<span>The Main Superheros</span>
+				</div>
 			</div>
 		</div>
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
+		<section id="'gallery">
+			<div class="container">
 				<h1>Gallery</h1>
-			</div>
+				<div class="flex-container">
 				
 					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="C:\Users\Julia\OneDrive\Desktop\HTML Project\Images\Thumb\thumbnail.jpg" alt="Catwoman">
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Thumb/thumbnail.jpg" alt="Catwoman">
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Catwoman</p>
 							</div>
@@ -45,9 +49,9 @@
 					<!-- END PHOTO-CONTAINER 1 -->
 					
 					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="C:\Users\Julia\OneDrive\Desktop\HTML Project\Images\Thumb\thumbnail_1.jpeg" alt="Batman">
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Thumb/thumbnail_1.jpeg" alt="Batman">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>Batman</p>
@@ -57,9 +61,9 @@
 					<!-- END PHOTO-CONTAINER 2 -->
 					
 					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="C:\Users\Julia\OneDrive\Desktop\HTML Project\Images\Thumb\thumbnail_3.jpeg" alt="Black Widow">
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Thumb/thumbnail_2.jpeg" alt="Black Widow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>Black Widow</p>
@@ -69,9 +73,9 @@
 					<!-- END PHOTO-CONTAINER 3 -->
 					
 					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="C:\Users\Julia\OneDrive\Desktop\HTML Project\Images\Thumb\thumbnail_4.jpeg" alt="Captain America">
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Thumb/thumbnail_3.jpeg" alt="Captain America">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>Captain America</p>
@@ -81,9 +85,9 @@
 					<!-- END PHOTO-CONTAINER 4 -->
 					
 					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="C:\Users\Julia\OneDrive\Desktop\HTML Project\Images\Thumb\thumbnail_5.jpeg" alt="Ironman">
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Thumb/thumbnail_4.jpeg" alt="Ironman">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>Ironman</p>
@@ -93,9 +97,9 @@
 					<!-- END PHOTO-CONTAINER 5 -->
 					
 					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="C:\Users\Julia\OneDrive\Desktop\HTML Project\Images\Thumb\thumbnail_6.jpeg" alt="Superman">
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Thumb/thumbnail_5.jpeg" alt="Superman">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>Superman</p>
@@ -105,9 +109,9 @@
 					<!-- END PHOTO-CONTAINER 6 -->
 					
 					<!-- PHOTO-CONTAINER 7 -->
-					<div>
-						<div>
-							<img src="C:\Users\Julia\OneDrive\Desktop\HTML Project\Images\Thumb\thumbnail_7.jpeg" alt="Wolverine">
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Thumb/thumbnail_6.jpeg" alt="Wolverine">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>Wolverine</p>
@@ -117,9 +121,9 @@
 					<!-- END PHOTO-CONTAINER 7 -->
 					
 					<!-- PHOTO-CONTAINER 8 -->
-					<div>
-						<div>
-							<img src="C:\Users\Julia\OneDrive\Desktop\HTML Project\Images\Thumb\thumbnail_8.jpeg" alt="Wonder Woman">
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Thumb/thumbnail_7.jpeg" alt="Wonder Woman">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>Wonder Woman</p>
@@ -129,9 +133,9 @@
 					<!-- END PHOTO-CONTAINER 8 -->
 					
 					<!-- PHOTO-CONTAINER 9 -->
-					<div>
-						<div>
-							<img src="C:\Users\Julia\OneDrive\Desktop\HTML Project\Images\Thumb\thumbnal_2.jpeg" alt="Black Adam">
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Thumb/thumbnail_8.jpeg" alt="Black Adam">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>Black Adam</p>
@@ -145,27 +149,28 @@
 		<!-- END GALLERY -->
 		
 		<!-- RSVP -->
-		<section>
-			<div id="contact"> 
-				<div>
-					<h1>Comics</h1>
-					<div>
-						<h2><span>Find out more about your superpower.</sapn>
+		<section id="contact">
+			<div id="container"> 
+				<div class="heading-padding">
+					<h1 class="heading-padding">Comics</h1>
+					<div class="reservation">
+						<h2>
+							<span>Find out more about your superpower.</sapn>
 							<br>Find a hero that fights like you!
 						</h2>
-						<p>
+						<p class="rsvp-text">
 							Can't find your favourite superhero? Telecommunicate with us today.
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action="" method="post">
-								<input class="rsvp" type="text" value="First Name">
-								<input class="rsvp" type="text" value="Last Name">
-								<input class="rsvp" type="text" value="Email">
-								<input class="rsvp" type="text" value="Phone Number">
-								<div class="telecommunicate">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email">
+								<input class="rsvp" type="text" value="" placeholder="Number">
+								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
 							</form>
