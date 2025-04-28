@@ -10,12 +10,12 @@ html {
 }
 
 body {
-    font-size: 14px;
+    font-size: 100px;
     margin: 0;
     font-family: "Helvica Neue", Helvica, Arial, Helvetica, sans-serif;
     line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
+    color: #cfbdbd;
+    background-color: #000000;
 }
 
 footer,
@@ -23,14 +23,17 @@ nav {
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
 }
 
 h1 {
-    line-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: -20px;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 72px;
     text-transform: uppercase;
     color: #e91c1c;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -39,11 +42,11 @@ h1 {
 h1::after { /*This is the underline */
     display: block;
     content: "";
-    height: 2px;
-    width: 150px;
+    height: 5px;
+    width: 330px;
     background: #e91c1c;
     margin: 5px auto 40px;
-    box-shadow: 5px 2px 3px rgba (0, 0, 0, 0.5);
+    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -60,14 +63,15 @@ h4 {
     padding-top: 25px;
     line-height: 40px;
     padding-bottom: 0px;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 900;
 }
 
 p {
+    font-size: 15px;
     font-weight: 300;
     line-height: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .text-center {
@@ -75,7 +79,7 @@ p {
 }
 
 .heading-padding {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 section {
@@ -90,22 +94,23 @@ section {
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 15px;
 }
 
 .clearfix::after, /* :after is now ::after with a double colon */
@@ -117,19 +122,19 @@ section {
 }
 
 .wrap {
-    height: 100%;
-    width: 100%;
-    position: absolute
+    height: auto;
+    width: auto;
+    position: relative;
     /* This ensures that the images cannot render outside of their
     container without forcing any scrollbars*/;
-    overflow: hidden;
+    overflow: visible;
     top: 0%;
     left: 0%;
     text-align: center;
 }
 
 .menu-container {
-    max-height: 340px;
+    max-height: 500px;
     margin: 0% auto;
     content: "";
     /* top 0;
@@ -145,7 +150,7 @@ section {
     HOME SECTION STYLES
 ------------------------------*/
 #home {
-    background: url(../Images/Main_hero.png); no-repeat 50% 50%
+    background: url(../Images/Main_hero.png); no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -156,13 +161,13 @@ section {
     height: auto;
     padding-top: 350px; /*This is spacer before the Main title Logo */
     padding-bottom: 500px; /* This is spacer after the Main title Logo */
-    color: #fff;
+    color: #ff0b0b;
 }
 
 .head-main {
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
     font-variant: small-caps;
-    color: #fff;
+    color: #ffffff;
     letter-spacing: 5pt;
     word-spacing: 21pt;
     font-size: 4.5em;
@@ -193,56 +198,78 @@ section {
     CONTACT STYLES
 ------------------------------*/
 .flex-container {
+    word-wrap: break-word;
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(248, 248, 248, 0.3);
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 #contact {
     background-color: #f5f3f3;
+    padding: 40px 0;
 }
 
 .reservation {
-    width: 60%;
-    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
     border-radius: 8px;
     margin: 0 auto;
-    background-color: rgba(100, 65, 0, 0.3);
+    background-color: rgba(215, 29, 29, 0.897);
     box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 1), ;
 }
 
 .reservation h2 {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    color: #13161b;
+    width: 100%;
+    text-align: left;
+    line-height: 1;
+    margin: 0 0 10px 0;
+    color: #eceff5;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 15px;
     letter-spacing: 0pt;
     word-spacing: 0pt;
+    margin-bottom: 10px;
 }
 
 .reservation h2 span {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    color: #13161b;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 10px 0;
+    line-height: 1;
+    color: #e8ebf0;
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: 15px;
     font-variant: small-caps;
     letter-spacing: .4pt;
     word-spacing: .3pt;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .reservation p {
     color: #13161b;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
+}
+
+.rsvp-text {
+    font-size: 15px;
+    line-height: 1;
+    width: 100%;
+    margin: 0 0 10px 0;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
 }
 
 .reservation form {
@@ -251,33 +278,34 @@ section {
     font-weight: 600;
     color: #8d8e8f;
     padding: 12px 12px;
-    width: 70%;
+    width: 80%;
     border: 1px solid #808080;
     margin: 2% auto;
     border-radius: 7px;
-    background: rgb(227, 222, 222);
+    background: rgb(137, 132, 132);
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
-.reservation input [type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
     color: #8d8e8f;
     padding: 2% 1% 2% 7%;
-    width: 80%;
+    width: 90%;
     border-top: 1px solid #090B0D;
     border-right: 2px solid #424549;
     border-bottom: 2px solid #424549;
     border-left: 1px solid #090B0D;
-    margin: 10px 1em;
+    margin: 10px auto;
+    display: block;
     border-radius: 7px;
     background: #13161b;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
     font-family: 'Raleway', sans-serif;
 }
 
-.reservation input [type="text"]:hover {
+.reservation input[type="text"]:hover {
     box-shadow: 0 0 18px rgba(100, 65, 0, .8);
 }
 
@@ -323,7 +351,7 @@ section {
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
-.submit input [type="submit"]:hover {
+.submit input[type="submit"]:hover {
     color: #000;
     background-color: #8d8e8f;
     box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
@@ -347,17 +375,52 @@ section {
     .head-main {
             font-size: 28px;
     }
+    .reservation h2 {
+        font-size: 1.5em;
+    }
+
+    .reservation h2 span {
+        font-size: 1.2em;
+    }
+
+    .rsvp-text {
+        font-size: 1em;
+    }
 }
 
 @media all and (max-width: 381px) and (min-width: 200px) {
     .head-main {
         font-size: 24px;
     }
+
+    .reservation h2 {
+        font-size: 1.5em;
+    }
+
+    .reservation h2 span {
+        font-size: 1.2em;
+    }
+
+    .rsvp-text {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 768px) {
     .container {
-        width: 750;
+        width: 750px;
+    }
+
+    .reservation h2 {
+        font-size: 1.5em;
+    }
+
+    .reservation h2 span {
+        font-size: 1.2em;
+    }
+
+    .rsvp-text {
+        font-size: 1em;
     }
 }
 
@@ -365,11 +428,35 @@ section {
     .container {
         width: 970px;
     }
+
+    .reservation h2 {
+        font-size: 1.5em;
+    }
+
+    .reservation h2 span {
+        font-size: 1.2em;
+    }
+
+    .rsvp-text {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+    }
+
+    .reservation h2 {
+        font-size: 80px;
+    }
+
+    .reservation h2 span {
+        font-size: 100px;
+    }
+
+    .rsvp-text {
+        font-size: 20px;
     }
 }
 

@@ -4,35 +4,32 @@
 .menu {
     color: #f00;
     font: bold 12px/18px sans-serif;
-    text-align: inline;
-    display: 0% auto;
-    margin: 0% auto;
+    text-align: center;
+    display: 0 auto;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
 
 .menu li {
-    color: #000;
-    background-color: rgba (255, 255, 255, 1);
+    color: #f00;
+    background-color: rgb(8, 8, 8);
     display: inline-block;
     margin: 0% auto;
     position: relative;
     padding: 15px 4%;
     border: 1px solid #9D9FA2;
-    box-shadow: 2px 2px 10px 0 rgba (0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     /*background-color: #052136;*/
     cursor: pointer;
-    transition-property: background;
-    transition-duration: .4s;
-    transition-delay: 0s;
-    transition-timing-function: ease-in-out;
+    transition-property: background 0.4s ease-in-out;
 }
 
 .menu li:hover {
     color: #f00;
-    background-color: rgba (100, 65, 0, 0.3);
+    background-color: rgba(100, 65, 0, 0.3);
 }
 
 /*--------------------------------------
@@ -44,28 +41,34 @@
     line-height: 0;
     margin-bottom: 2em;
     overflow: hidden;
+    width: 250px;
+    height: 400px;
     border-radius: 8px;
     padding: 1px;
     border: 1px solid #021a40;
-    background-color: #ff0;
+    background-color: rgb(136, 6, 6);
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
  .photo-container {
+   display: inline-block;
     text-align: center;
-    margin: 100%;
-    width: 300px;
-    height: 169px;
+    margin: 10px;
+    width: 250px;
+    height: 430px;
  }
 
  .photo-container img {
     max-width: 100%;
-    width: 300px;
-    height: 169px;
+    width: 250px;
+    height: 430px;
  }
 
  .photo-overlay {
-    color: #fff;
+    color: #ffffff;
     position: absolute;
     top: 0;
     right: 0;
@@ -87,20 +90,36 @@
     PHOTO OVERLAY TRANSITIONS
  --------------------------------------*/  
 
- .photo-overlay {
-    opacity: 0;
-    transition: opacity .5s;
-    border-radius: 10px;
-    cursor: pointer;
- }
+ 
+.photo-overlay {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ede3e3;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      opacity: 0;
+      transition: opacity .5s ease;
+      border-radius: 8px;
+      cursor: pointer;
+   }
+  
 
- .photo-overlay :hover {
+ .photo:hover .photo-overlay  {
     opacity: 1;
  }
 
  .photo img {
+   width: auto;
+   height: 100%;
+   display: block;
+   object-fit: contain;
     transition: transform .5s;
-    transform-origin: 50% 50%;
+    transform-origin: center;
  }
 
  .photo:hover img {
