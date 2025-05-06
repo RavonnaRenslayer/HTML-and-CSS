@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+}
+
+head, h1, h2, h3, p {
+    color: darkblue;
+}
+
+h3 {
+    position: center;
+}
+
+.bordered-image {
+    size-adjust: 600px 300px dashed;
+    border: 2px;
+    border-color: red;
+    border-style: dashed;
+}
+
+
+    
