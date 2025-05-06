@@ -16,13 +16,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active light text-light" href="#">About</a>
+                    <a class="nav-link active light text-light" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link  text-light" href="#">Showtimes</a>
+                    <a class="nav-link  text-light" href="#showtimes">Showtimes</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Deals</a>
+                    <a class="nav-link dropdown-toggle text-light" href="#deals" role="button" data-bs-toggle="dropdown" aria-expanded="false">Deals</a>
                 </ul>
                 <form class="d-flex my-2 my-lg-0" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -39,7 +39,7 @@
             </div>
           </div>
 
-            <div class="container">
+            <div class="container" id="about">
              <div class="row">
                 <div class="col">
 
@@ -81,43 +81,60 @@
         </div>   
 
         <!-- showtimes -->
+        <div class="container my-5" id="showtimes">
+          <h2 class="text-center mb-4">Showtimes</h2>
+        </div>
 
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt=" ">
+        <div class="d-flex justify-content-center  gap-5 flex-wrap">
+        <div class="card" style="width: 22em">
+          
+        <!---Cards go here-->
+
+          <img src="./Images/Movie_1.jpeg" class="card-img-top" style="height: 500px; object-fit: cover;" alt="Avengers Age of Ultron">
           <div class="card-body">
             <h5 class="card-title">Avengers Age of Ultron</h5>
             <p class="card-text">Tony Stark builds an artificial intelligence system named Ultron with the help of Bruce Banner. When the sentient Ultron makes plans to wipe out the human race, the Avengers set out to stop him.</p>
-            <a href="#" class="btn btn-primary">8:00am</a>
-            <a href="#" class="btn btn-primary">12:00pm</a>
-            <a href="#" class="btn btn-primary">14:30pm</a>
-            <a href="#" class="btn btn-primary">18:00pm</a>
+            <span class="badge rounded-pill text-bg-info">12:00 p.m</span>
+            <span class="badge rounded-pill text-bg-info">1:30 p.m</span>
+            <span class="badge rounded-pill text-bg-info">3:00 p.m</span>
+            <span class="badge rounded-pill text-bg-info">5:30 p.m</span>
+            <span class="badge rounded-pill text-bg-info">7:00 p.m</span>
+            <span class="badge rounded-pill text-bg-info">9:30 p.m</span>
           </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card" style="width: 22rem;">
+          <img src="./Images/Movie_2.jpg" class="card-img-top" style="height: 500px;" alt="Avengers Infinity War">
           <div class="card-body">
             <h5 class="card-title">Avengers Infinity War</h5>
             <p class="card-text">As Thanos sets about his quest for finding the infinity stones and carrying out his twisted scheme, the Avengers join forces with their allies to stop him from causing chaos and destruction.</p>
-            <a href="#" class="btn btn-primary">8:00am</a>
-            <a href="#" class="btn btn-primary">12:00pm</a>
-            <a href="#" class="btn btn-primary">14:30pm</a>
-            <a href="#" class="btn btn-primary">18:00pm</a>
+            <span class="badge rounded-pill text-bg-info">12:00 p.m</span>
+            <span class="badge rounded-pill text-bg-info">1:30 p.m</span>
+            <span class="badge rounded-pill text-bg-info">3:00 p.m</span>            
+            <span class="badge rounded-pill text-bg-info">5:30 p.m</span>
+            <span class="badge rounded-pill text-bg-info">7:00 p.m</span>
+            <span class="badge rounded-pill text-bg-info">9:30 p.m</span>
+
           </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card" style="width: 22rem;">
+          <img src="./Images/Movie_3.jpeg" class="card-img-top" style="height: 500px;" alt="Avengers End Game">
           <div class="card-body">
             <h5 class="card-title">Avengers End Game</h5>
             <p class="card-text">After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</p>
-            <a href="#" class="btn btn-primary">8:00am</a>
-            <a href="#" class="btn btn-primary">12:00pm</a>
-            <a href="#" class="btn btn-primary">14:30pm</a>
-            <a href="#" class="btn btn-primary">18:00pm</a>
+            <span class="badge rounded-pill text-bg-info">12:00 p.m</span>
+            <span class="badge rounded-pill text-bg-info">1:30 p.m</span>
+            <span class="badge rounded-pill text-bg-info">3:00 p.m</span>            
+            <span class="badge rounded-pill text-bg-info">5:30 p.m</span>
+            <span class="badge rounded-pill text-bg-info">7:00 p.m</span>
+            <span class="badge rounded-pill text-bg-info">9:30 p.m</span>
+
           </div>
         </div>
 
+      </div>
+      </div>
         <!-- /showtimes -->
 
         <div class="text-center">
@@ -151,6 +168,7 @@
             <small class="nav-link">&copy;2019 Academy Cinemas&reg;</small>
         </ul>
         </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>
   </html>
